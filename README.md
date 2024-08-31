@@ -128,6 +128,24 @@ origin-https	https://github.com/andrey-borue/devops-netology.git (push)
 1. Отправьте изменения в репозиторий и посмотрите, как изменится схема на странице https://github.com/YOUR_ACCOUNT/devops-netology/network 
 и как изменится вывод команды `git log`.
 
+#### Решение
+Для того, чтобы не портить репозиторий hw-02-01-devops, были проделаны следующие манипуляции:
+```sh
+git remote add https://github.com/MakarAlexander/02-01-hw-devops.git master
+```
+```sh
+git fetch master
+```
+```sh
+git checkout 7f303e582518cc787fe7d8072b7843c95f729940
+```
+```sh
+git switch -c fix
+```
+Были сделанны коммиты в соответсвии с заданием, начиная от того момента, где создана новая ветка Fix.
+
+![1-1](./2.jpg)
+
 ## Задание 4. Упрощаем себе жизнь
 
 Попробуем поработь с Git при помощи визуального редактора. 
